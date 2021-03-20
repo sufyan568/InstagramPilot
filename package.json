@@ -1,0 +1,32 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "cross-env": "^5.2.1",
+        "jquery-sortablejs": "^1.0.1",
+        "laravel-mix": "^4.1.4",
+        "resolve-url-loader": "^2.3.2"
+    },
+    "dependencies": {
+        "blueimp-file-upload": "^10.31.0",
+        "bootbox": "^5.4.0",
+        "bootstrap-pincode-input": "^2.2.0",
+        "emojionearea": "^3.4.2",
+        "flatpickr": "^4.6.6",
+        "jquery.repeater": "^1.2.1",
+        "show-more": "^1.0.1",
+        "sortablejs": "^1.10.2",
+        "tabler-ui": "github:tabler/tabler#master",
+        "timeago.js": "^4.0.2",
+        "trumbowyg": "^2.21.0",
+        "viewerjs": "^1.6.1"
+    }
+}
